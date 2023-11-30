@@ -1,3 +1,8 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     font-family: 'Quarzo';
     background-color: #fde4e4;
@@ -44,6 +49,10 @@ div#resultado {
     margin-top: 20px;
     font-size: 24px;
     color: #ff6b6b;
+}
+
+footer {
+    font-style: italic;
 }
 
 
