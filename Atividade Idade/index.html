@@ -2,29 +2,31 @@
 <html lang="pt-BR">
 
 <head>
-  <meta charset="UTF-8">
-  <title>Verificar sua idade</title>
+    <meta charset="UTF-8">
+    <title>Verificar sua idade</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
-<header>
-    <h1>Verificar Idade</h1>
-</header>
-   
 <body>
-    <label for="idade">Digite sua idade:</label>
-    <input type="number" id="idade" placeholder="Idade">
 
-    <p> Verificar Idade
-        <input type="submit" id="resultado "value="Verificar" onclick="verificarIdade()">
-    </p>
+    <header class="header">
+        <h1>Verificar Idade</h1>
+    </header>
 
-    <footer>
+    <main class="main-content">
+        <label for="idade" class="label-idade">Digite sua idade:</label>
+        <input type="number" id="idade" class="input-idade" placeholder="Idade">
+
+        <input type="submit" class="btn-verificar" value="Verificar" onclick="verificarIdade()">
+        <input type="text" id="resultado" class="btn-resultado" readonly>
+    </main>
+
+    <footer class="footer">
         <p>&copy; Luana Elizabete</p>
     </footer>
- 
+
     <script src="./js/idade.js"></script>
 </body>
 

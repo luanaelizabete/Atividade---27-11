@@ -1,21 +1,22 @@
 function verificarIdade() {
     const idade = parseInt(document.getElementById('idade').value);
-    const resultado = document.getElementById('resultado');
+    const caixaResultado = document.getElementById('resultado');
 
     if (isNaN(idade) || idade <= 0) {
-        resultado.textContent = "Por favor, insira uma idade que seja válida!";
+        caixaResultado.value = "Por favor, insira uma idade válida!";
         return;
     }
 
     if (idade < 18) {
-        resultado.textContent = "Você é um menor de idade!";
+        caixaResultado.value = "Você é menor de idade!";
     } else if (idade >= 18 && idade <= 25) {
-        resultado.textContent = "Você é um jovem!";
+        caixaResultado.value = "Você é jovem!";
     } else if (idade > 25 && idade <= 45) {
-        resultado.textContent = "Você é um jovem adulto!";
+        caixaResultado.value = "Você é jovem adulto!";
     } else if (idade > 45 && idade <= 60) {
-        resultado.textContent = "Você é um adulto!";
+        caixaResultado.value = "Você é adulto!";
     } else {
-        resultado.textContent = "Você está na terceira idade!";
+        caixaResultado.value = "Você está na terceira idade!";
     }
 }
+
