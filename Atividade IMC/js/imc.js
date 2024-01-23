@@ -27,3 +27,9 @@ function calcularIMC() {
 
     document.getElementById("resultado").textContent = textResultado;
 }
+
+
+//saída
+// let mensagem='$(nomeUsuario). seu IMC é ${resultadoIMC}! Resultado: ${nivelObesidade};
+//let mensagem2='sou um texto ${nomeUsuario}';
+//document.querySelector('.resultado').innerHTML=mensagem;
