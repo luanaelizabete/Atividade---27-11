@@ -6,8 +6,7 @@
     <title>Calculadora de IMC</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="../Atividade IMC/css/style.css">
-
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
@@ -16,26 +15,27 @@
     </header>
 
     <form action="" id="form" method="post">
-        <label for="nome" class="label-nome">Digite seu nome:</label>
-        <input type="text" id="nome" class="input-nome" placeholder="Nome">
+        <label for="input-nome" class="label-nome">Digite seu nome:</label>
+        <input type="text" name="nome" class="input-nome" placeholder="Nome">
         <br>
 
-        <label for="peso">Digite seu peso:</label>
-        <input type="number" id="peso" class="input-peso">
+        <label for="input-peso">Digite seu peso:</label>
+        <input type="number" name="peso" class="input-peso">
         <br>
 
-        <label for="altura">Digite sua altura:</label>
-        <input type="number" id="altura" class="input-altura" step="0.01">
+        <label for="input-altura">Digite sua altura:</label>
+        <input type="number" name="altura" class="input-altura" step="0.01">
         <br>
 
-        <input type="button" value="calcular" onclick="calcularIMC();">
+        <input type="button" class="btn-calcular" value="calcular">
         <br>
 
-        <p class="paragrafo-resultado" id="resultado"> </p>
+        <p class="paragrafo-resultado destaque"></p>
+
 
     </form>
 
-    <script src="../Atividade IMC/js/imc.js"></script>
+    <script src="js/jsCorrecao.js" ></script>
 
 </body>
 
